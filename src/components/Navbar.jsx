@@ -1,0 +1,2 @@
+import React from "react";import {Link} from "react-router-dom";import {useSelector} from "react-redux";
+export default function Navbar(){const count=useSelector(s=>s.cart.items.reduce((a,i)=>a+i.quantity,0));return <header className="navbar"><div className="nav-inner"><Link to="/" className="brand">Shop<span>Ease</span></Link><nav><Link to="/">Home</Link><Link to="/products">Products</Link><Link to="/cart">Cart <b>{count}</b></Link></nav></div></header>;}

@@ -1,0 +1,2 @@
+import React from "react";import {Link} from "react-router-dom";
+export default function Home(){return <section className="hero"><div><span className="eyebrow">MODERN E-COMMERCE EXPERIENCE</span><h1>Shop smarter.<br/><em>Live better.</em></h1><p>Discover trending products with a simple, fast and responsive shopping experience built with React.</p><Link to="/products" className="primary-btn">Explore Products →</Link></div><div className="hero-card"><div className="hero-icon">🛍️</div><h2>ShopEase</h2><p>Simple. Fast. Modern.</p></div></section>;}
